@@ -12,6 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <div className='w-full bg-yellow-600 h-screen'>
+        <h1 className='py-20 self-center'>Hello</h1>
+      </div>
       
     </div>
   )
