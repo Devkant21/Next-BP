@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className='w-full  h-screen'>
+      <div className='w-full bg-slate-400 h-screen'>
         <section className="text-gray-700 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col">
@@ -23,7 +23,7 @@ export default function Home() {
               </div>
               <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                 <h1 className="sm:w-2/5 text-gray-700 font-medium title-font text-2xl mb-2 sm:mb-0">Alpha Bravo Charlie</h1>
-                <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu</p>
+                <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Old Macdonald had a fun eieio</p>
               </div>
             </div>
             
@@ -35,7 +35,7 @@ export default function Home() {
                   <Image alt="content" className="object-cover object-center h-full w-full" width={200} height={200} src="/ok.svg" />
                 </div>
                 <h2 className="text-xl font-medium title-font text-gray-700 mt-5">On me</h2>
-                <p className="text-base leading-relaxed mt-2">Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu</p>
+                <p className="text-base leading-relaxed mt-2">Old Macdonald had a fun eieio</p>
                 
               </div>
               </div>
@@ -45,7 +45,7 @@ export default function Home() {
                   <Image alt="content" className="object-cover object-center h-full w-full" width={200} height={200} src="/ok.svg" />
                 </div>
                 <h2 className="text-xl font-medium title-font text-gray-700 mt-5">Fire in the hole</h2>
-                <p className="text-base leading-relaxed mt-2">Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu</p>
+                <p className="text-base leading-relaxed mt-2">Old Macdonald had a fun eieio</p>
                 
               </div>
               </div>
@@ -58,7 +58,7 @@ export default function Home() {
                 </div>
           
                 <h2 className="text-xl font-medium title-font text-gray-700 mt-5">MIA</h2>
-                <p className="text-base leading-relaxed mt-2">Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu</p>
+                <p className="text-base leading-relaxed mt-2">Old Macdonald had a fun eieio</p>
       
               </div>
               </div>
