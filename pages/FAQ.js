@@ -10,7 +10,7 @@ const FAQ = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className='w-full  h-screen'>
+            <div className='w-full bg-slate-400 h-screen'>
             
             
                 <h1>FAQ</h1>
