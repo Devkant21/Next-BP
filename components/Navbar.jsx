@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React,{ useState, useEffect } from 'react'
-import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import Image from 'next/image'
 
 const Navbar = () => {
@@ -28,8 +28,11 @@ const Navbar = () => {
   return (
     <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
         <div className='max-w-[1240px] m-auto flex justify-between items-center text-white p-4'>
-            <Link href='/'>
-                <Image src="/PG.jpg" width={100} height={100} alt="/" />
+            <Link href='/' passHref>
+                {/* <div className='w-full h-auto m-auto shadow-xl shadow-gray-500 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'> */}
+                    <Image src="/PG.jpg" width={100} height={100} alt="/" />  
+                {/* </div> */}
+                {/* <Image src="/PG.jpg" width={100} height={100} alt="/" /> */}
                 {/* <h1 style={{color: `${textColor}`}} className='font-bold text-4xl'>Next_BP</h1> */}
             </Link>
             <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
@@ -38,11 +41,11 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='p-4'>
-                    <Link href='/about'>About
+                    <Link href='/#about'>About
                     </Link>
                 </li>
                 <li className='p-4'>
-                    <Link href='/contributors'>Contributors
+                    <Link href='/#contributors'>Contributors
                     </Link>
                 </li>
             </ul>
@@ -55,16 +58,16 @@ const Navbar = () => {
             </div>
             <div className={nav ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300' : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
             <ul>
-                <li className='p-5 text-4xl hover:text-gray-400'>
+                <li onClick={()=> setNav(false)} className='p-5 text-4xl hover:text-gray-400'>
                     <Link href='/'>Home
                     </Link>
                 </li>
-                <li className='p-5 text-4xl hover:text-gray-400'>
-                    <Link href='/about'>About
+                <li onClick={()=> setNav(false)} className='p-5 text-4xl hover:text-gray-400'>
+                    <Link href='/#about'>About
                     </Link>
                 </li>
-                <li className='p-5 text-4xl hover:text-gray-400'>
-                    <Link href='/contributors'>Contributors
+                <li onClick={()=> setNav(false)} className='p-5 text-4xl hover:text-gray-400'>
+                    <Link href='/#contributors'>Contributors
                     </Link>
                 </li>
             </ul>
