@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React,{ useState, useEffect } from 'react'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+import Image from 'next/image'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -28,7 +29,8 @@ const Navbar = () => {
     <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
         <div className='max-w-[1240px] m-auto flex justify-between items-center text-white p-4'>
             <Link href='/'>
-                <h1 style={{color: `${textColor}`}} className='font-bold text-4xl'>Next_BP</h1>
+                <Image src="/PG.jpg" width={100} height={100} alt="/" />
+                {/* <h1 style={{color: `${textColor}`}} className='font-bold text-4xl'>Next_BP</h1> */}
             </Link>
             <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
                 <li className='p-4'>
@@ -36,7 +38,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='p-4'>
-                    <Link href='/resources'>Resources
+                    <Link href='/about'>About
                     </Link>
                 </li>
                 <li className='p-4'>
@@ -58,7 +60,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='p-5 text-4xl hover:text-gray-400'>
-                    <Link href='/resources'>Resources
+                    <Link href='/about'>About
                     </Link>
                 </li>
                 <li className='p-5 text-4xl hover:text-gray-400'>
