@@ -48,6 +48,10 @@ const Navbar = () => {
                     <Link href='/#contributors'>Contributors
                     </Link>
                 </li>
+                <li className='p-4'>
+                    <Link href='/#rashob'>Rashob
+                    </Link>
+                </li>
             </ul>
             <div onClick={handleNav} className='block sm:hidden z-10'>
                 {nav ? (
@@ -68,6 +72,10 @@ const Navbar = () => {
                 </li>
                 <li onClick={()=> setNav(false)} className='p-5 text-4xl hover:text-gray-400'>
                     <Link href='/#contributors'>Contributors
+                    </Link>
+                </li>
+                <li onClick={()=> setNav(false)} className='p-5 text-4xl hover:text-gray-400'>
+                    <Link href='/#rashob'>Rashob
                     </Link>
                 </li>
             </ul>
